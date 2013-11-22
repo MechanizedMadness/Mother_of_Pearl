@@ -11,8 +11,8 @@ public class OreDict {
 
         OreDictionary.registerOre("dustGold", new ItemStack(ModItems.dustGold));
         OreDictionary.registerOre("dustIron", new ItemStack(ModItems.dustIron));
-        OreDictionary.registerOre("blockClay", new ItemStack(ModBlocks.classicClay));
-        OreDictionary.registerOre("blockClay", new ItemStack(ModBlocks.clayOyster));
+        //OreDictionary.registerOre("blockClay", new ItemStack(ModBlocks.classicClay));
+        //OreDictionary.registerOre("blockClay", new ItemStack(ModBlocks.clayOyster));
 
     }
 }

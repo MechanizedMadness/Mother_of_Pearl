@@ -61,8 +61,8 @@ public class ItemStacks {
     public static final ItemStack blackPearlstone = new ItemStack(ModBlocks.blackPearlstone, 1, 0);
     public static final ItemStack pearlstoneBrick = new ItemStack(ModBlocks.pearlstoneBrick, 1, 0);
     public static final ItemStack blackPearlstoneBrick = new ItemStack(ModBlocks.blackPearlstoneBrick, 1, 0);
-    public static final ItemStack clayOyster = new ItemStack(ModBlocks.clayOyster, 1, 0);
-    public static final ItemStack classicClay = new ItemStack(ModBlocks.classicClay, 1, 0);
+    //public static final ItemStack clayOyster = new ItemStack(ModBlocks.clayOyster, 1, 0);
+    //public static final ItemStack classicClay = new ItemStack(ModBlocks.classicClay, 1, 0);
     // MopItems
     public static final ItemStack oyster = new ItemStack(ModItems.oyster, 1, 0);
     public static final ItemStack oysterMeat = new ItemStack(ModItems.oysterMeat, 1, 0);

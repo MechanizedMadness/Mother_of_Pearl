@@ -18,8 +18,8 @@ public class Crafting {
 
     public static void init() {
         GameRegistry.registerCraftingHandler(new CraftingHandler());
-        Crafting.RemoveRecipe(ItemStacks.clayBlock);
-        GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.classicClay, 1), "yy", "yy", 'y', ItemStacks.clayItem);
+        //Crafting.RemoveRecipe(ItemStacks.clayBlock);
+        //GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.classicClay, 1), "yy", "yy", 'y', ItemStacks.clayItem);
         ModArmor.initCrafting();
         ModBlocks.initCrafting();
         ModItems.initCrafting();

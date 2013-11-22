@@ -43,8 +43,6 @@ public class ClayBreakHandler {
                 ItemStack cdrop = new ItemStack(cItemID, 1, 0);
                 oList.add(cdrop);
             }
-        }
-        if(oChance == 0){
             for(int i = 0; i < oCount; ++i)
             {
                 ItemStack odrop = new ItemStack(oItemID, 1, 0);
@@ -63,6 +61,7 @@ public class ClayBreakHandler {
             ItemStack fodrop = new ItemStack(foItemID, 1, 0);
             oList.add(fodrop);
         }
+        
         
     }
 

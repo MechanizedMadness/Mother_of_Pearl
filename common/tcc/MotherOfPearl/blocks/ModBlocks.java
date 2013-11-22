@@ -29,8 +29,8 @@ public class ModBlocks {
     public static Block blackPearlstone;
     public static Block pearlstoneBrick;
     public static Block blackPearlstoneBrick;
-    public static Block clayOyster;
-    public static Block classicClay;
+    //public static Block clayOyster;
+    //public static Block classicClay;
 
     public static void init() {
         defBlocks();
@@ -56,8 +56,8 @@ public class ModBlocks {
         blackPearlstone = new BlockBlackPearlStone(MOPConfiguration.blackPearlstoneID, Material.rock);
         pearlstoneBrick = new BlockPearlStoneBrick(MOPConfiguration.pearlstoneBrickID, Material.rock);
         blackPearlstoneBrick = new BlockBlackPearlStoneBrick(MOPConfiguration.blackPearlstoneBrickID, Material.rock);
-        clayOyster = new BlockOysterClay(MOPConfiguration.clayOysterID, Material.clay);
-        classicClay = new BlockClassicClay(MOPConfiguration.classicClayID, Material.clay);
+        //clayOyster = new BlockOysterClay(MOPConfiguration.clayOysterID, Material.clay);
+        //classicClay = new BlockClassicClay(MOPConfiguration.classicClayID, Material.clay);
     }
 
     public static void initHarvestLevels() {
@@ -73,8 +73,8 @@ public class ModBlocks {
         MinecraftForge.setBlockHarvestLevel(blackPearlstone, "Pickaxe", 2);
         MinecraftForge.setBlockHarvestLevel(pearlstoneBrick, "Pickaxe", 2);
         MinecraftForge.setBlockHarvestLevel(blackPearlstoneBrick, "Pickaxe", 2);
-        MinecraftForge.setBlockHarvestLevel(clayOyster, "Shovel", 1);
-        MinecraftForge.setBlockHarvestLevel(classicClay, "Shovel", 1);
+        //MinecraftForge.setBlockHarvestLevel(clayOyster, "Shovel", 1);
+        //MinecraftForge.setBlockHarvestLevel(classicClay, "Shovel", 1);
     }
 
     public static void initGameRegistry() {
@@ -92,8 +92,8 @@ public class ModBlocks {
         GameRegistry.registerBlock(blackPearlstone, "blackPearlstone");
         GameRegistry.registerBlock(pearlstoneBrick, "pearlstoneBrick");
         GameRegistry.registerBlock(blackPearlstoneBrick, "blackPearlstoneBrick");
-        GameRegistry.registerBlock(clayOyster, "clayOyster");
-        GameRegistry.registerBlock(classicClay, "classicClay");
+        //GameRegistry.registerBlock(clayOyster, "clayOyster");
+        //GameRegistry.registerBlock(classicClay, "classicClay");
     }
 
     public static void initCrafting() {
@@ -119,8 +119,8 @@ public class ModBlocks {
         GameRegistry.addShapelessRecipe(new ItemStack(blackPearlstone, 1), ModItems.dustBlackPearl, ItemStacks.stone);
         GameRegistry.addShapelessRecipe(new ItemStack(blackPearlCobblestone, 1), ModItems.dustBlackPearl, ItemStacks.cobblestone);
         GameRegistry.addShapelessRecipe(new ItemStack(blackPearlstoneBrick, 1), ModItems.dustBlackPearl, ItemStacks.stoneBrick);
-        GameRegistry.addSmelting(ModBlocks.clayOyster.blockID, new ItemStack(Block.hardenedClay, 1), 0.2F);
-        GameRegistry.addSmelting(ModBlocks.classicClay.blockID, new ItemStack(Block.hardenedClay, 1), 0.2F);
+        //GameRegistry.addSmelting(ModBlocks.clayOyster.blockID, new ItemStack(Block.hardenedClay, 1), 0.2F);
+        //GameRegistry.addSmelting(ModBlocks.classicClay.blockID, new ItemStack(Block.hardenedClay, 1), 0.2F);
     }
 
     public static void initLanguageRegistry() {
@@ -138,7 +138,7 @@ public class ModBlocks {
         LanguageRegistry.addName(blackPearlstone, "Black Pearly Stone");
         LanguageRegistry.addName(pearlstoneBrick, "Pearly Stone Brick");
         LanguageRegistry.addName(blackPearlstoneBrick, "Black Pearly Stone Brick");
-        LanguageRegistry.addName(clayOyster, "Clay");
-        LanguageRegistry.addName(classicClay, "Clay");
+        //LanguageRegistry.addName(clayOyster, "Clay");
+        //LanguageRegistry.addName(classicClay, "Clay");
     }
 }
