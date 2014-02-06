@@ -51,8 +51,6 @@ public class MOPConfiguration {
     public static int pearlCobblestoneID;
     public static int blackPearlCobblestoneID;
     public static int blackPearlstoneBrickID;
-    public static int clayOysterID;
-    public static int classicClayID;
     public static int bootsBlackPearlID;
     public static int chestplateBlackPearlID;
     public static int helmetBlackPearlID;
@@ -77,6 +75,10 @@ public class MOPConfiguration {
     public static int pearlLeafID;
     public static int pearlLogID;
     public static int pearlSaplingID;
+    public static int nightvisionID;
+    public static int angelwingsID;
+    public static int jumpingID;
+    public static int swiftnessID;
 
     public static Configuration cfg = MotherOfPearl.cfg;
 
@@ -150,15 +152,19 @@ public class MOPConfiguration {
         blackPearlstoneID = cfg.get(Configuration.CATEGORY_BLOCK, "Black Pearly Stone", 511).getInt();
         pearlstoneBrickID = cfg.get(Configuration.CATEGORY_BLOCK, "Pearly Stone Brick", 512).getInt();
         blackPearlstoneBrickID = cfg.get(Configuration.CATEGORY_BLOCK, "Black Pearly Stone Brick", 513).getInt();
-        //clayOysterID = cfg.get(Configuration.CATEGORY_BLOCK, "Oyster Yielding Clay", 514).getInt();
-        //classicClayID = cfg.get(Configuration.CATEGORY_BLOCK, "Classic Clay", 515).getInt();
-        pearlFireID = cfg.get(Configuration.CATEGORY_BLOCK, "Pearly Fire", 2000).getInt();
-        pearlPortalID = cfg.get(Configuration.CATEGORY_BLOCK, "Pearly Portal", 2001).getInt();
+        pearlFireID = cfg.get(Configuration.CATEGORY_BLOCK, "Pearly Fire", 2270).getInt();
+        pearlPortalID = cfg.get(Configuration.CATEGORY_BLOCK, "Pearly Portal", 2271).getInt();
         pearlGrassID = cfg.get(Configuration.CATEGORY_BLOCK, "Pearly Grass", 200).getInt();
         pearlDirtID = cfg.get(Configuration.CATEGORY_BLOCK, "Pearly Dirt", 201).getInt();
         pearlLeafID = cfg.get(Configuration.CATEGORY_BLOCK, "Pearly Leaf", 2002).getInt();
         pearlLogID = cfg.get(Configuration.CATEGORY_BLOCK, "Pearly Log", 2003).getInt();
         pearlSaplingID = cfg.get(Configuration.CATEGORY_BLOCK, "Pearly Sapling", 2004).getInt();
+        
+
+        nightvisionID = cfg.get(Configuration.CATEGORY_GENERAL, "Night Vision Enchantment", 10).getInt();
+        angelwingsID = cfg.get(Configuration.CATEGORY_GENERAL, "Angel Wings Enchantment", 11).getInt();
+        jumpingID = cfg.get(Configuration.CATEGORY_GENERAL, "Jumping Enchantment", 12).getInt();
+        swiftnessID = cfg.get(Configuration.CATEGORY_GENERAL, "Swiftness Enchantment", 13).getInt();
 
         cfg.save();
     }

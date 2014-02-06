@@ -1,12 +1,12 @@
 package tcc.MotherOfPearl;
 
-import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.Configuration;
 import tcc.MotherOfPearl.armor.ModArmor;
 import tcc.MotherOfPearl.blocks.ModBlocks;
 import tcc.MotherOfPearl.dimension.Dimension;
+import tcc.MotherOfPearl.enchantment.ModEnchantments;
 import tcc.MotherOfPearl.items.ModItems;
 import tcc.MotherOfPearl.proxy.CommonProxy;
 import tcc.MotherOfPearl.tools.ModTools;
@@ -18,7 +18,6 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 import darkevilmac.MotherOfPearl.Config.MOPConfiguration;
-import darkevilmac.MotherOfPearl.addons.Addons;
 import darkevilmac.MotherOfPearl.events.Events;
 import darkevilmac.MotherOfPearl.lib.Reference;
 import darkevilmac.MotherOfPearl.misc.Crafting;
@@ -35,14 +34,14 @@ public class MotherOfPearl {
             return new ItemStack(ModItems.pearl, 1, 0);
         }
     };
-
+    /*
     public static CreativeTabs tabMoP_WIP = new CreativeTabs("MoP_WIP") {
 
         @Override
         public ItemStack getIconItemStack() {
             return new ItemStack(ModBlocks.pearlstoneBrick, 1, 0);
         }
-    };
+    };*/
 
     @SidedProxy(clientSide = Reference.PROXY_PATH + ".ClientProxy", serverSide = Reference.PROXY_PATH + ".CommonProxy")
     public static CommonProxy proxy;
@@ -56,6 +55,7 @@ public class MotherOfPearl {
 
         MOPConfiguration.init();
         ModBlocks.init();
+        ModEnchantments.init();
         ModItems.init();
         ModTools.init();
         ModArmor.init();
@@ -79,7 +79,7 @@ public class MotherOfPearl {
 
     @EventHandler
     public static void postInit(FMLPostInitializationEvent event) {
-        Addons.init();
+        
 
     }
 

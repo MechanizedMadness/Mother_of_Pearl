@@ -1,4 +1,4 @@
-package tcc.MotherOfPearl.items;
+package tcc.MotherOfPearl.tools;
 
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.player.EntityPlayer;
@@ -16,11 +16,13 @@ public class ItemPearlIgniter extends Item {
         super(par1);
         this.maxStackSize = 1;
         setMaxDamage(64);
-        //setCreativeTab(MotherOfPearl.tabMoP);
+        setCreativeTab(MotherOfPearl.tabMoP);
         setUnlocalizedName("pearlIgniter");
     }
 
     public boolean onItemUse(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, World par3World, int par4, int par5, int par6, int par7, float par8, float par9, float par10) {
+
+    	System.out.println("[MOP] " + par2EntityPlayer.username + " just used a Pearl Igniter");
         if (par7 == 0) {
             par5--;
         }

@@ -1,4 +1,4 @@
-package tcc.MotherOfPearl.items;
+package tcc.MotherOfPearl.tools;
 
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.entity.player.EntityPlayer;

@@ -23,19 +23,7 @@ public class WorldGenModOre implements IWorldGenerator {
     }
 
     private void generateSurface(World world, Random random, int chunkX, int chunkZ) {
-        for (int i = 0; i < 50; i++) {
-            ;
-            int xCoord = chunkX + random.nextInt(16);
-            int yCoord = random.nextInt(128);
-            int zCoord = chunkZ + random.nextInt(16);
-            new WorldGenMinable(ModBlocks.blackPearlstone.blockID, 15).generate(world, random, xCoord, yCoord, zCoord);
-        }
-        for (int i = 0; i < 50; i++) {
-            int xCoord = chunkX + random.nextInt(16);
-            int yCoord = random.nextInt(128);
-            int zCoord = chunkZ + random.nextInt(16);
-            new WorldGenMinable(ModBlocks.pearlstone.blockID, 15).generate(world, random, xCoord, yCoord, zCoord);
-        }
+    	
     }
 
     private void generateNether(World world, Random random, int chunkX, int chunkZ, IChunkProvider par1IChunkProvider, int par2, int par3) {

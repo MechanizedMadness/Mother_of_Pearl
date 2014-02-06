@@ -6,15 +6,16 @@ import net.minecraft.client.renderer.texture.IconRegister;
 import tcc.MotherOfPearl.MotherOfPearl;
 import darkevilmac.MotherOfPearl.lib.Reference;
 
-public class BlockPearlCobbleStone extends Block {
+public class BlockPearlCobblestone extends Block {
 
-    public BlockPearlCobbleStone(int par1, Material par2Material) {
+    public BlockPearlCobblestone(int par1, Material par2Material) {
         super(par1, par2Material);
         // TODO Auto-generated constructor stub
         this.setUnlocalizedName("pearlCobblestone");
         this.setHardness(1.0F);
         this.setStepSound(soundStoneFootstep);
         this.setCreativeTab(MotherOfPearl.tabMoP);
+        this.setResistance(20.0F);
     }
 
     @Override

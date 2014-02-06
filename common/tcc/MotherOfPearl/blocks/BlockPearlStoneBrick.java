@@ -15,6 +15,7 @@ public class BlockPearlStoneBrick extends Block {
         this.setHardness(1.0F);
         this.setStepSound(soundStoneFootstep);
         this.setCreativeTab(MotherOfPearl.tabMoP);
+        this.setResistance(20.0F);
     }
 
     @Override
